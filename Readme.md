@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
-* Студент: [Юлия Тихонова](https://up.htmlacademy.ru/htmlcss/34/user/1537801).
-* Наставник: `Неизвестно`.
+* Студент: [Юлия Тихонова](https://htmlacademy.ru/profile/id1537801).
+* Наставник: [Александр Румянцев](https://htmlacademy.ru/profile/id1521451).
 
 ---
 
