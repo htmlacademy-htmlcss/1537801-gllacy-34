@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="./styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -12,18 +13,18 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="./catalog.html">Каталог</a>
+            <a class="navigation-link" href="catalog.html">Каталог</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="./delivery.html">Доставка и оплата</a>
+            <a class="navigation-link" href="delivery.html">Доставка и оплата</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="./about.html">О компании</a>
+            <a class="navigation-link" href="about.html">О компании</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="tel:+78005558628">+7 800 555-86-28</a>
+            <a class="navigation-link navigation-link-phone" href="tel:+78005558628">+7 800 555-86-28</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
@@ -31,12 +32,12 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link header-button" href="#">
               <span class="visually-hidden">Вход</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link header-button" href="#">
               <span class="visually-hidden">Корзина</span>
             </a>
           </li>
@@ -49,7 +50,7 @@
         <li class="breadcrumbs-item"><span>Каталог</span></li>
       </ul>
 
-      <h1 class="page-title">Сливочное мороженое</h1>
+      <h1 class="page-title-catalog">Сливочное мороженое</h1>
 
       <section class="catalog">
         <h2 class="visually-hidden">Продукты</h2>
@@ -226,11 +227,21 @@
         <button class="catalog-button-more">Показать еще</button>
 
         <ul class="pagination">
-          <li class="pagination-item"><a href="#">1</a></li>
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">4</a></li>
-          <li class="pagination-item"><a href="#">5</a></li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">5</a>
+          </li>
         </ul>
       </section>
     </main>
