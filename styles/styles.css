@@ -1,0 +1,249 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/inter-400.woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/inter-700.woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/inter-900.woff2");
+}
+
+body {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #565C66;  
+  background-color: #FEAFC3;
+}
+
+.page-header {
+ line-height: 20px;
+}
+
+.header-button {
+  font-size: 14px;
+}
+
+.page-header a {
+  color:#2D3440;
+  text-decoration: none;
+}
+
+.navigation-link-phone {
+  font-weight: 700;
+}
+
+.slider {
+  color:#2D3440;
+}
+
+.slider-title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.slider-text {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.slider-button {
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.section-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.products-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.products-price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+advertising-blog-text {
+  line-height: 20px;
+}
+
+.advertising-blog-title {
+  font-weight: 700; 
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.page-button {
+  font-weight: 700;
+  line-height: 20px;
+  color: #FCFCFC;
+  background-color:#FF2F64;
+}
+
+.delivery-form-input-title {
+  font-weight: 700;
+  line-height: 20px
+}
+
+.contacts-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.footer-item-link {
+  font-size: 14px;
+  line-height: 20px;
+  
+}
+
+.footer-item-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  line-height: 16px; 
+}
+
+.footer-copyright a{
+  font-size: 12px;
+  line-height: 16px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.footer-item-link {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.breadcrumbs-list {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+.breadcrumbs-list a {
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.page-title-catalog {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  color: #2D3440;
+}
+
+.catalog-form {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+
+}
+
+.catalog-form-button {
+  font-weight: 700;
+  color: #2D3440;
+}
+
+.pagination {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.pagination-link {
+  color: #2D3440;
+  text-decoration: none;
+}
+
+.catalog-button-more {
+  font-weight: 700;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+ .gifts-item {
+  background-color: #FF7799;
+}
+
+.gifts-item-one {
+  background-image: url('../images/gift-1.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+}
+
+.gifts-item-twoo {
+  background-image: url('../images/gift-2.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+}
+
+.info {
+  background-color: #FFFFFF;
+  background-image: url(../images/wafer-background.png);
+}
+
+.advertising-item {
+  background-color: #FFFFFF;
+}
+
+.advertising-blog {
+  background-image: url(../images/advertising-img.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.advertising-mailing-list {
+  background-image: url(../images/advertising-background.png);
+}
+
+.delivery {
+  background-color: #F2F1F2;
+  background-image: url(../images/delivery-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.contacts {
+  background-color: #E8DDDB;
+  background-image: url(../images/contacts-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
