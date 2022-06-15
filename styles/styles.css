@@ -22,18 +22,36 @@
   src: url("../fonts/inter-900.woff2");
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  height: 100%;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color: #565C66;  
+  color: #565C66;
   background-color: #FEAFC3;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 1170px;
+  margin: 0 auto;
+}
+
 .page-header {
- line-height: 20px;
+  line-height: 20px;
 }
 
 .header-button {
@@ -41,7 +59,7 @@ body {
 }
 
 .page-header a {
-  color:#2D3440;
+  color: #2D3440;
   text-decoration: none;
 }
 
@@ -49,8 +67,29 @@ body {
   font-weight: 700;
 }
 
+.navigation {
+  display: flex;
+}
+
+.navigation-list {
+  max-width: 400px;
+}
+
+.navigation-user {
+  margin-left: auto;
+  max-width: 431px;
+}
+
 .slider {
-  color:#2D3440;
+  color: #2D3440;
+}
+
+.slider-item {
+  display: flex;
+}
+
+.slider-item-content {
+  max-width: 470px;
 }
 
 .slider-title {
@@ -92,7 +131,7 @@ advertising-blog-text {
 }
 
 .advertising-blog-title {
-  font-weight: 700; 
+  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 }
@@ -101,7 +140,7 @@ advertising-blog-text {
   font-weight: 700;
   line-height: 20px;
   color: #FCFCFC;
-  background-color:#FF2F64;
+  background-color: #FF2F64;
 }
 
 .delivery-form-input-title {
@@ -120,7 +159,7 @@ advertising-blog-text {
 .footer-item-link {
   font-size: 14px;
   line-height: 20px;
-  
+
 }
 
 .footer-item-text {
@@ -129,12 +168,12 @@ advertising-blog-text {
   line-height: 20px;
 }
 
-.footer-copyright {
+.footer-copyright-text {
   font-size: 12px;
-  line-height: 16px; 
+  line-height: 16px;
 }
 
-.footer-copyright a{
+.footer-copyright-text a {
   font-size: 12px;
   line-height: 16px;
   color: #2D3440;
@@ -146,6 +185,11 @@ advertising-blog-text {
   line-height: 20px;
   color: #2D3440;
   text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
 }
 
 .breadcrumbs-list {
@@ -196,7 +240,14 @@ advertising-blog-text {
   color: #2D3440;
 }
 
- .gifts-item {
+.gifts-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.gifts-item {
+  max-width: 570px;
   background-color: #FF7799;
 }
 
@@ -214,13 +265,39 @@ advertising-blog-text {
   background-size: contain;
 }
 
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.products-item {
+  max-width: 270px;
+
+}
+
 .info {
   background-color: #FFFFFF;
   background-image: url(../images/wafer-background.png);
 }
 
+.info-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info-item {
+  max-width: 505px;
+}
+
+.advertising-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .advertising-item {
   background-color: #FFFFFF;
+  max-width: 570px;
 }
 
 .advertising-blog {
@@ -240,6 +317,21 @@ advertising-blog-text {
   background-size: 100% auto;
 }
 
+.delivery-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.delivery-content {
+  max-width: 371px;
+}
+
+
+.delivery-form {
+  background-color: #FCFCFC;
+  max-width: 500px;
+}
+
 .contacts {
   background-color: #E8DDDB;
   background-image: url(../images/contacts-background.jpg);
@@ -247,3 +339,6 @@ advertising-blog-text {
   background-size: 100% auto;
 }
 
+.contacts-info {
+  background-color: #FCFCFC;
+}
