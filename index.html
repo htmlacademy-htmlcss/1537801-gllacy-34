@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
   <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
 </head>
 
 <body>
@@ -30,19 +31,19 @@
             <a class="navigation-link navigation-link-phone" href="tel:+78005558628">+7 800 555-86-28</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-search" href="#">
+            <button type="button" class="navigation-link navigation-link-search" href="#">
               <span class="visually-hidden">Поиск.</span>
-            </a>
+            </button>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link header-button navigation-link-personal-account" href="#">
+            <button type="button" class="navigation-link header-button navigation-link-personal-account" href="#">
               <span class="visually-hidden">Вход.</span>
-            </a>
+            </button>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link header-button navigation-link-basket" href="#">
+            <button type="button" class="navigation-link header-button navigation-link-basket"  href="#">
               <span class="visually-hidden">Корзина.</span>
-            </a>
+            </button>
           </li>
         </ul>
       </nav>
@@ -58,7 +59,7 @@
               <h3 class="slider-title">Нежный пломбир с клубничным джемом</h3>
               <p class="slider-text">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом –
                 это идеальный десерт для всей семьи.</p>
-              <button class="slider-button">Заказать</button>
+              <button type="button" class="slider-button" type="">Заказать</button>
             </div>
             <img class="slider-img" src="./images/slider-product-1.png" width="306" height="507"
               alt="Нежный пломбир с клубничным джемом.">
@@ -68,7 +69,7 @@
               <h3 class="slider-title">Сливочное мороженое со вкусом банана</h3>
               <p class="slider-text">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение
                 даже в самый жаркий летний день. </p>
-              <button class="slider-button">Заказать</button>
+              <button type="button" class="slider-button">Заказать</button>
             </div>
             <img class="slider-img" src="./images/slider-product-2.png" width="306" height="507"
               alt="Сливочное мороженое со вкусом банана.">
@@ -78,7 +79,7 @@
               <h3 class="slider-title">Карамельный пломбир с маршмеллоу</h3>
               <p class="slider-text">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца
                 сладкоежек всех возрастов.</p>
-              <button class="slider-button">Заказать</button>
+              <button type="button" class="slider-button">Заказать</button>
             </div>
             <img class="slider-img" src="./images/slider-product-3.png" width="306" height="507"
               alt="Карамельный пломбир с маршмеллоу.">
@@ -112,13 +113,13 @@
             <h3 class="gifts-title">Малинка даром!</h3>
             <p class="gifts-text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового
               варенья бесплатно.</p>
-            <button class="gifts-button">Хочу подарок</button>
+            <button type="button" class="gifts-button">Хочу подарок</button>
           </li>
           <li class="gifts-item gifts-item-twoo">
             <h3 class="gifts-title">Маршмеллоу даром!</h3>
             <p class="gifts-text">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно
               бесплатно.</p>
-            <button class="gifts-button">Хочу подарок</button>
+            <button type="button" class="gifts-button">Хочу подарок</button>
           </li>
         </ul>
       </section>
@@ -133,7 +134,7 @@
             <h3 class="products-title">Малинка</h3>
             <p class="products-text">Сливочное мороженое с малиновым джемом</p>
             <span class="products-price">310 ₽/кг</span>
-            <button class="products-button">
+            <button type="button" class="products-button">
               <span class="visually-hidden">Добавить в корзину.</span>
             </button>
           </li>
@@ -143,7 +144,7 @@
             <h3 class="products-title">Фисташка</h3>
             <p class="products-text">Фисташковый пломбир с кусочками шоколада</p>
             <span class="products-price">340 ₽/кг</span>
-            <button class="products-button">
+            <button type="button" class="products-button">
               <span class="visually-hidden">Добавить в корзину.</span>
             </button>
           </li>
@@ -153,7 +154,7 @@
             <h3 class="products-title">Черника</h3>
             <p class="products-text">Крем-брюле с черничным джемом</p>
             <span class="products-price">330 ₽/кг</span>
-            <button class="products-button">
+            <button type="button" class="products-button">
               <span class="visually-hidden">Добавить в корзину.</span>
             </button>
           </li>
@@ -163,7 +164,7 @@
             <h3 class="products-title">Бабл-гам</h3>
             <p class="products-text">Ванильный пломбир со сладкой посыпкой</p>
             <span class="products-price">320 ₽/кг</span>
-            <button class="products-button">
+            <button type="button" class="products-button">
               <span class="visually-hidden">Добавить в корзину.</span>
             </button>
           </li>
@@ -194,18 +195,20 @@
 
         <div class="advertising-list">
           <article class="advertising-item advertising-blog">
-            <p class="advertising-blog-text">Новое в нашем блоге</p>
-            <h3 class="advertising-blog-title">10 способов сервировки фруктовых щербетов к столу</h3>
+              <p class="advertising-blog-text">Новое в нашем блоге</p>
+              <h3 class="advertising-blog-title">10 способов сервировки фруктовых щербетов к столу</h3>
           </article>
 
           <article class="advertising-item advertising-mailing-list">
-            <p class="advertising-text">Подпишитесь на нашу сладкую рассылку и будьте всегда
-              в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды.
-              Честно =)</p>
-            <form class="advertising-form" method="post" action="https://echo.htmlacademy.ru/">
-              <input class="advertising-input" name="email" type="email" placeholder="email@example.com">
-              <button class="advertising-button page-button">Отправить</button>
-            </form>
+            <div class="advertising-mailing-inner">
+              <p class="advertising-text">Подпишитесь на нашу сладкую рассылку и будьте всегда
+                в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды.
+                Честно =)</p>
+              <form class="advertising-form" method="post" action="https://echo.htmlacademy.ru/">
+                <input class="advertising-input" name="email" type="email" placeholder="email@example.com">
+                <button type="submit" class="advertising-button page-button">Отправить</button>
+              </form>
+            </div>
           </article>
         </div>
       </section>
@@ -236,7 +239,7 @@
               <input type="text" name="adress" placeholder="ул. Большая Конюшенная, 19/8" required>
             </label>
 
-            <button class="delivery-form-button page-button">Отправить</button>
+            <button type="submit" class="delivery-form-button page-button">Отправить</button>
           </form>
         </div>
       </section>
@@ -252,7 +255,7 @@
             +7 (812) 812-12-12
             <span class="contacts-link-work-time">(с 10 до 20 ежедневно)</span>
           </a>
-          <button class="contacts-button page-button">Форма обратной связи</button>
+          <button type="button" class="contacts-button page-button">Форма обратной связи</button>
         </article>
       </section>
     </main>
@@ -275,20 +278,24 @@
         </li>
       </ul>
 
-      <ul class="footer-list">
-        <li class="footer-item">
-          <p class="footer-item-text">Для поставщиков</p>
-        </li>
-        <li class="footer-item">
-          <a class="footer-item-link" href="#">Наши документы</a>
-        </li>
-        <li class="footer-item">
-          <a class="footer-item-link" href="#">О производстве</a>
-        </li>
-        <li class="footer-item">
-          <a class="footer-item-link" href="#">Экологические стандарты</a>
-        </li>
-      </ul>
+      <div class="footer-list-wrapper">
+        <ul class="footer-list">
+          <li class="footer-item">
+            <p class="footer-item-text">Для поставщиков</p>
+          </li>
+          <li class="footer-item">
+            <a class="footer-item-link" href="#">Наши документы</a>
+          </li>
+        </ul>
+        <ul class="footer-list">
+          <li class="footer-item">
+            <a class="footer-item-link" href="#">О производстве</a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-item-link" href="#">Экологические стандарты</a>
+          </li>
+        </ul>
+      </div>
 
       <div class="footer-copyright">
         <img class="footer-logo" src="./images/htmlacademy-logo.svg" width="93" height="27" alt="Html academy.">

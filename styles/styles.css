@@ -22,6 +22,12 @@
   src: url("../fonts/inter-900.woff2");
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
 }
@@ -174,13 +180,19 @@ body {
   line-height: 20px;
 }
 
+.footer .socials {
+  margin: 0;
+}
+
 .socials {
   display: flex;
+  max-width: 104px;
   justify-content: flex-end;
   list-style-type: none;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
+  margin-left: auto;
 }
 
 .socials-item {
@@ -191,8 +203,8 @@ body {
   margin-right: 16px;
 }
 
-.socials-item:last-child {
-  margin: 0;
+.socials-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .section-title {
@@ -203,10 +215,6 @@ body {
   margin: 0 auto 56px auto;
 }
 
-.socials-item {
-  min-width: 32px;
-  min-height: 32px;
-}
 
 .products-title {
   font-weight: 700;
@@ -221,8 +229,10 @@ body {
   color: #2D3440;
 }
 
-advertising-blog-text {
+.advertising-blog-text {
   line-height: 20px;
+  margin: 0;
+  margin-bottom: 12px;
 }
 
 .advertising-blog-title {
@@ -231,6 +241,20 @@ advertising-blog-text {
   line-height: 30px;
   max-width: 303px;
   color: #2D3440;
+  margin: 0;
+}
+
+.advertising-mailing-inner {
+  background-color: #fff;
+  padding: 26px;
+}
+
+.advertising-text {
+  margin: 0 0 42px 0;
+}
+
+.advertising-input {
+  height: 48px;
 }
 
 .page-button {
@@ -448,7 +472,6 @@ advertising-blog-text {
 
 .info {
   padding: 24px;
-  background-color: #FFFFFF;
   background-image: url(../images/wafer-background.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -475,14 +498,14 @@ advertising-blog-text {
 }
 
 .advertising-list {
+  padding: 1px;
   display: flex;
   justify-content: space-between;
 }
 
 .advertising-item {
   background-color: #FFFFFF;
-  width: 100%;
-  max-width: 570px;
+  width: 50%;
   margin-right: 30px;
 }
 
@@ -494,12 +517,16 @@ advertising-blog-text {
   padding: 32px 32px 67px 32px;
   background-image: url(../images/advertising-img.png);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
+  background-color: #FFFFFF;
 }
 
 .advertising-mailing-list {
-  padding: 26px;
+  padding: 6px;
   background-image: url(../images/advertising-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #EDF1F5;
 }
 
 .delivery {
