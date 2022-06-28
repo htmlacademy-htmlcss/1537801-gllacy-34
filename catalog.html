@@ -5,15 +5,16 @@
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
   <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
 </head>
 
 <body>
   <div class="page-container">
     <header class="page-header">
-      <a class="logo-link" href="index.html">
-        <img class="logo-img" src="./images/site-logo.svg" width="137" height="56" alt="Логотип Gllasy Shop.">
-      </a>
       <nav class="navigation">
+        <a class="logo-link" href="index.html">
+          <img class="logo-img" src="./images/site-logo.svg" width="137" height="56" alt="Логотип Gllasy Shop.">
+        </a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог</a>
@@ -30,19 +31,19 @@
             <a class="navigation-link navigation-link-phone" href="tel:+78005558628">+7 800 555-86-28</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <button type="button" class="navigation-link navigation-link-search" href="#">
               <span class="visually-hidden">Поиск.</span>
-            </a>
+            </button>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link header-button" href="#">
+            <button type="button" class="navigation-link header-button navigation-link-personal-account" href="#">
               <span class="visually-hidden">Вход.</span>
-            </a>
+            </button>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link header-button" href="#">
+            <button type="button" class="navigation-link header-button navigation-link-basket"  href="#">
               <span class="visually-hidden">Корзина.</span>
-            </a>
+            </button>
           </li>
         </ul>
       </nav>
@@ -55,7 +56,7 @@
 
       <h1 class="page-title-catalog">Сливочное мороженое</h1>
 
-      <section class="catalog">
+      <section class="page-section catalog">
         <h2 class="visually-hidden">Продукты.</h2>
 
         <form class="catalog-form" action="" method="get">
@@ -113,7 +114,7 @@
             </label>
           </fieldset>
 
-          <button calass="catalog-form-button">Применить</button>
+          <button type="submit" calass="catalog-form-button">Применить</button>
         </form>
 
         <ul class="products-list">
@@ -123,7 +124,7 @@
             <h3 class="products-title">Малинка</h3>
             <p class="products-text">Сливочное мороженое с малиновым джемом</p>
             <span class="products-price">310 ₽/кг</span>
-            <button class="products-button">
+            <button type="button"class="products-button">
               <span class="visually-hidden">Добавить в корзину.</span>
             </button>
           </li>
@@ -133,7 +134,7 @@
             <h3 class="products-title">Фисташка</h3>
             <p class="products-text">Фисташковый пломбир с кусочками шоколада</p>
             <span class="products-price">340 ₽/кг</span>
-            <button class="products-button">
+            <button type="button" class="products-button">
               <span class="visually-hidden">Добавить в корзину.</span>
             </button>
           </li>
@@ -143,7 +144,7 @@
             <h3 class="products-title">Черника</h3>
             <p class="products-text">Крем-брюле с черничным джемом</p>
             <span class="products-price">330 ₽/кг</span>
-            <button class="products-button">
+            <button type="button" class="products-button">
               <span class="visually-hidden">Добавить в корзину.</span>
             </button>
           </li>
@@ -153,7 +154,7 @@
             <h3 class="products-title">Бабл-гам</h3>
             <p class="products-text">Ванильный пломбир со сладкой посыпкой</p>
             <span class="products-price">320 ₽/кг</span>
-            <button class="products-button">
+            <button type="button" class="products-button">
               <span class="visually-hidden">Добавить в корзину.</span>
             </button>
           </li>
@@ -163,7 +164,7 @@
             <h3 class="products-title">Ежевика</h3>
             <p class="products-text">Сливочное мороженое с ежевичным джемом</p>
             <span class="products-price">330 ₽/кг</span>
-            <button class="products-button">
+            <button type="button" class="products-button">
               <span class="visually-hidden">Добавить в корзину.</span>
             </button>
           </li>
@@ -173,7 +174,7 @@
             <h3 class="products-title">Банан</h3>
             <p class="products-text">Сливочный пломбир с банановым вкусом</p>
             <span class="products-price">340 ₽/кг</span>
-            <button class="products-button">
+            <button type="button" class="products-button">
               <span class="visually-hidden">Добавить в корзину.</span>
             </button>
           </li>
@@ -183,7 +184,7 @@
             <h3 class="products-title">Шоколадка</h3>
             <p class="products-text">Классический шоколадный пломбир</p>
             <span class="products-price">270 ₽/кг</span>
-            <button class="products-button">
+            <button type="button" class="products-button">
               <span class="visually-hidden">Добавить в корзину.</span>
             </button>
           </li>
@@ -193,7 +194,7 @@
             <h3 class="products-title">Клубничка</h3>
             <p class="products-text">Сливочный пломбир с клубничным вкусом</p>
             <span class="products-price">300 ₽/кг</span>
-            <button class="products-button">
+            <button type="button" class="products-button">
               <span class="visually-hidden">Добавить в корзину.</span>
             </button>
           </li>
@@ -203,7 +204,7 @@
             <h3 class="products-title">Лимон</h3>
             <p class="products-text">Освежающий лимонный сорбет</p>
             <span class="products-price">310 ₽/кг</span>
-            <button class="products-button">
+            <button type="button" class="products-button">
               <span class="visually-hidden">Добавить в корзину.</span>
             </button>
           </li>
@@ -213,7 +214,7 @@
             <h3 class="products-title">Ментол</h3>
             <p class="products-text">Сливочный пломбир с ментоловым сиропом</p>
             <span class="products-price">320 ₽/кг</span>
-            <button class="products-button">
+            <button type="button" class="products-button">
               <span class="visually-hidden">Добавить в корзину.</span>
             </button>
           </li>
@@ -223,7 +224,7 @@
             <h3 class="products-title">Орешек</h3>
             <p class="products-text">Фисташковый пломбир с шоколадным сиропом</p>
             <span class="products-price">360 ₽/кг</span>
-            <button class="products-button">
+            <button type="button" class="products-button">
               <span class="visually-hidden">Добавить в корзину.</span>
             </button>
           </li>
@@ -233,31 +234,33 @@
             <h3 class="products-title">Крем-брюле</h3>
             <p class="products-text">Классическое крем-брюле </p>
             <span class="products-price">280 ₽/кг</span>
-            <button class="products-button">
+            <button type="button" class="products-button">
               <span class="visually-hidden">Добавить в корзину.</span>
             </button>
           </li>
         </ul>
 
-        <button class="catalog-button-more">Показать еще</button>
+        <div class="pagination-wrapper">
+          <button type="button"class="catalog-button-more">Показать еще</button>
 
-        <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">5</a>
-          </li>
-        </ul>
+          <ul class="pagination">
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">5</a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
@@ -279,20 +282,24 @@
         </li>
       </ul>
 
-      <ul class="footer-list">
-        <li class="footer-item">
-          <p class="footer-item-text">Для поставщиков</p>
-        </li>
-        <li class="footer-item">
-          <a class="footer-item-link" href="#">Наши документы</a>
-        </li>
-        <li class="footer-item">
-          <a class="footer-item-link" href="#">О производстве</a>
-        </li>
-        <li class="footer-item">
-          <a class="footer-item-link" href="#">Экологические стандарты</a>
-        </li>
-      </ul>
+      <div class="footer-list-wrapper">
+        <ul class="footer-list">
+          <li class="footer-item">
+            <p class="footer-item-text">Для поставщиков</p>
+          </li>
+          <li class="footer-item">
+            <a class="footer-item-link" href="#">Наши документы</a>
+          </li>
+        </ul>
+        <ul class="footer-list">
+          <li class="footer-item">
+            <a class="footer-item-link" href="#">О производстве</a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-item-link" href="#">Экологические стандарты</a>
+          </li>
+        </ul>
+      </div>
 
       <div class="footer-copyright">
         <img class="footer-logo" src="./images/htmlacademy-logo.svg" width="93" height="27" alt="Html academy.">
