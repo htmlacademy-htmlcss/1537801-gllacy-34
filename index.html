@@ -129,37 +129,43 @@
 
         <ul class="products-list">
           <li class="products-item">
-            <img class="products-img" src="./images/product-1.jpg" width="168" height="168"
+            <img class="products-img" src="./images/product-1.png" width="168" height="168"
               alt="Вкус мороженного Малинка.">
             <h3 class="products-title">Малинка</h3>
             <p class="products-text">Сливочное мороженое с малиновым джемом</p>
-            <span class="products-price">310 ₽/кг</span>
-            <button type="button" class="products-button">
-              <span class="visually-hidden">Добавить в корзину.</span>
-            </button>
+            <div class="products-bottom">
+              <span class="products-price">310 ₽/кг</span>
+              <button type="button" class="products-button">
+                <span class="visually-hidden">Добавить в корзину.</span>
+              </button>
+            </div>
           </li>
           <li class="products-item">
-            <img class="products-img" src="./images/product-2.jpg" width="168" height="168"
+            <img class="products-img" src="./images/product-2.png" width="168" height="168"
               alt="Вкус мороженного Фисташка.">
             <h3 class="products-title">Фисташка</h3>
             <p class="products-text">Фисташковый пломбир с кусочками шоколада</p>
-            <span class="products-price">340 ₽/кг</span>
-            <button type="button" class="products-button">
-              <span class="visually-hidden">Добавить в корзину.</span>
-            </button>
+            <div class="products-bottom">
+              <span class="products-price">340 ₽/кг</span>
+              <button type="button" class="products-button">
+                <span class="visually-hidden">Добавить в корзину.</span>
+              </button>
+            </div>
           </li>
           <li class="products-item">
-            <img class="products-img" src="./images/product-3.jpg" width="168" height="168"
+            <img class="products-img" src="./images/product-3.png" width="168" height="168"
               alt="Вкус мороженного Черника.">
             <h3 class="products-title">Черника</h3>
             <p class="products-text">Крем-брюле с черничным джемом</p>
-            <span class="products-price">330 ₽/кг</span>
-            <button type="button" class="products-button">
-              <span class="visually-hidden">Добавить в корзину.</span>
-            </button>
+            <div class="products-bottom">
+              <span class="products-price">330 ₽/кг</span>
+              <button type="button" class="products-button">
+                <span class="visually-hidden">Добавить в корзину.</span>
+              </button>
+            </div>
           </li>
           <li class="products-item">
-            <img class="products-img" src="./images/product-4.jpg" width="168" height="168"
+            <img class="products-img" src="./images/product-4.png" width="168" height="168"
               alt="Вкус мороженного Бабл-гам.">
             <h3 class="products-title">Бабл-гам</h3>
             <p class="products-text">Ванильный пломбир со сладкой посыпкой</p>
@@ -205,7 +211,7 @@
                 в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды.
                 Честно =)</p>
               <form class="advertising-form" method="post" action="https://echo.htmlacademy.ru/">
-                <input class="advertising-input" name="email" type="email" placeholder="email@example.com">
+                <input class="page-input advertising-input" name="email" type="email" placeholder="email@example.com">
                 <button type="submit" class="advertising-button page-button">Отправить</button>
               </form>
             </div>
@@ -224,20 +230,24 @@
           <form class="delivery-form" action="https://echo.htmlacademy.ru/">
             <p class="delivery-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
 
-            <label class="delivery-form-group">
-              <span class="delivery-form-input-title">Дата</span>
-              <input type="date" name="date" value="2020-04-01" required>
-            </label>
+            <div class="delivery-form-wrapper">
+              <div class="delivery-form-input-wrapper">
+                <label class="delivery-form-group delivery-form-group-date">
+                  <span class="delivery-form-input-title">Дата</span>
+                  <input class="page-input" type="date" name="date" value="2020-04-01" required>
+                </label>
 
-            <label class="delivery-form-group">
-              <span class="delivery-form-input-title">Телефон</span>
-              <input type="tel" name="phone" placeholder="+7 800 999-00-00">
-            </label>
+                <label class="delivery-form-group">
+                  <span class="delivery-form-input-title">Телефон</span>
+                  <input class="page-input" type="tel" name="phone" placeholder="+7 800 999-00-00">
+                </label>
+              </div>
 
-            <label class="delivery-form-group">
-              <span class="delivery-form-input-title">Адрес</span>
-              <input type="text" name="adress" placeholder="ул. Большая Конюшенная, 19/8" required>
-            </label>
+              <label class="delivery-form-group">
+                <span class="delivery-form-input-title">Адрес</span>
+                <input class="page-input" type="text" name="adress" placeholder="ул. Большая Конюшенная, 19/8" required>
+              </label>
+            </div>
 
             <button type="submit" class="delivery-form-button page-button">Отправить</button>
           </form>
@@ -248,13 +258,15 @@
         <h2 class="visually-hidden">Контакты.</h2>
 
         <article class="contacts-info">
-          <p class="contacts-text">Адрес главного офиса и офлайн-магазина:</p>
-          <a class="contacts-link" href="#">наб. реки Карповки, 5 лит П, Санкт-Петербург</a>
-          <p class="contacts-text">Для заказов по телефону:</p>
-          <a class="contacts-link" href="tel:+78128121212">
-            +7 (812) 812-12-12
-            <span class="contacts-link-work-time">(с 10 до 20 ежедневно)</span>
-          </a>
+          <div class="contacts-info-content">
+            <p class="contacts-text">Адрес главного офиса и офлайн-магазина:</p>
+            <a class="contacts-link" href="#">наб. реки Карповки, 5 лит П, Санкт-Петербург</a>
+            <p class="contacts-text">Для заказов по телефону:</p>
+            <a class="contacts-link" href="tel:+78128121212">
+              +7 (812) 812-12-12
+              <span class="contacts-link-work-time">(с 10 до 20 ежедневно)</span>
+            </a>
+          </div>
           <button type="button" class="contacts-button page-button">Форма обратной связи</button>
         </article>
       </section>
