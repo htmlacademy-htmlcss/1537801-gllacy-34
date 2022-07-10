@@ -16,8 +16,17 @@
           <img class="logo-img" src="./images/site-logo.svg" width="137" height="56" alt="Логотип Gllasy Shop.">
         </a>
         <ul class="navigation-list">
-          <li class="navigation-item">
+          <li class="navigation-item navigation-item-drop">
             <a class="navigation-link header-link" href="catalog.html">Каталог</a>
+            <div class="navigation-link-drop">
+              <p class="drop-list-text">Новинки</p>
+              <ul class="drop-list">
+                <li class="drop-list-item"><a class="drop-list-item-link" href="#">Сливочное</a></li>
+                <li class="drop-list-item"><a class="drop-list-item-link" href="#">Щербеты</a></li>
+                <li class="drop-list-item"><a class="drop-list-item-link" href="#">Фруктовый лед</a></li>
+                <li class="drop-list-item"><a class="drop-list-item-link" href="#">Мелорин</a></li>
+              </ul>
+            </div>
           </li>
           <li class="navigation-item">
             <a class="navigation-link header-link" href="delivery.html">Доставка и оплата</a>
@@ -230,7 +239,7 @@
                 в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды.
                 Честно =)</p>
               <form class="advertising-form" method="post" action="https://echo.htmlacademy.ru/">
-                <input class="page-input advertising-input" name="email" type="email" placeholder="email@example.com">
+                <input class="page-input advertising-input error" name="email" type="email" placeholder="email@example.com">
                 <button type="submit" class="advertising-button page-button">Отправить</button>
               </form>
             </div>
@@ -258,7 +267,7 @@
 
                 <label class="delivery-form-group">
                   <span class="delivery-form-input-title">Телефон</span>
-                  <input class="page-input" type="tel" name="phone" placeholder="+7 800 999-00-00">
+                  <input class="page-input" type="tel" name="phone" disabled placeholder="+7 800 999-00-00">
                 </label>
               </div>
 
@@ -268,7 +277,7 @@
               </label>
             </div>
 
-            <button type="submit" class="delivery-form-button page-button">Отправить</button>
+            <button type="submit" class="delivery-form-button page-button" disabled>Отправить</button>
           </form>
         </div>
       </section>
