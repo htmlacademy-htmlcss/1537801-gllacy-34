@@ -42,6 +42,7 @@ body {
   line-height: 22px;
   color: #565C66;
   background-color: #FEAFC3;
+  overflow-x: hidden;
 }
 
 .visually-hidden {
@@ -61,7 +62,6 @@ body {
   min-height: 100%;
   width: 1170px;
   margin: 0 auto;
-  overflow-x: hidden;
 }
 
 .page-section {
@@ -118,6 +118,14 @@ body {
   outline: 2px solid #2D3440;
   outline-offset: 0;
   background-color: rgba(252, 252, 252, 0.5);
+}
+
+.main-catalog .products-img {
+  margin: -51px auto 3px auto;
+}
+
+.main-catalog .products-list {
+  margin-bottom: 10px;
 }
 
 .header-link:active {
@@ -873,7 +881,6 @@ body {
 
 .delivery-form-button {
   margin: 0 auto;
-  /* max-width: 152px; */
   display: block;
 }
 
@@ -1299,9 +1306,6 @@ body {
   background-color: rgba(252, 252, 252, .5);
 }
 
-.catalog-form-select:active {}
-
-
 .select-wrapper {
   position: relative;
   margin: 8px 0 0 0;
@@ -1432,6 +1436,7 @@ body {
 .pagination-button-prev {
   left: 0;
   transform: translate(0, -50%) rotate(180deg);
+  opacity: .3;
 }
 
 .pagination-button-next {
