@@ -121,7 +121,7 @@ body {
 }
 
 .main-catalog .products-img {
-  margin: -51px auto 3px auto;
+  margin: -51px auto 2px auto;
 }
 
 .main-catalog .products-list {
@@ -240,7 +240,7 @@ body {
 
 .slider-list {
   margin: 0;
-  padding: 20px 0 0 70px;
+  padding: 18px 0 0 70px;
   display: flex;
 }
 
@@ -366,7 +366,7 @@ body {
 
 .slider-text {
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 48px;
   font-size: 18px;
   line-height: 24px;
 }
@@ -388,7 +388,9 @@ body {
 }
 
 .slider-button {
+  margin: -8px 0 0 -4px;
   padding: 12px 32px;
+  font-family: inherit;
   font-weight: 700;
   line-height: 20px;
   font-size: 16px;
@@ -497,7 +499,7 @@ body {
 }
 
 .footer .socials {
-  margin: 0 128px 0 0;
+  margin: -1px 121px 0 2px;
 }
 
 .socials {
@@ -507,16 +509,14 @@ body {
   list-style-type: none;
   flex-wrap: wrap;
   padding: 0;
-  margin: 0;
+  margin: -6px -2px -2px -2px;
   margin-left: auto;
 }
 
 .socials-item {
-  margin: 0;
-  padding: 0;
-  /* min-width: 24px;
-  min-height: 24px; */
-  margin-right: 14px;
+  margin: 2px;
+  padding: 0px;
+  margin-right: 15px;
 }
 
 .socials-link {
@@ -677,7 +677,7 @@ body {
 .advertising-blog-text {
   line-height: 20px;
   margin: 0;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .advertising-blog-title {
@@ -809,6 +809,7 @@ body {
 
 .page-button {
   font-family: inherit;
+  margin: 0 -2px 0 -2px;
   border: 4px solid #F7BACA;
   border-radius: 26px;
   font-weight: 700;
@@ -859,7 +860,7 @@ body {
 
 .delivery-form-input-wrapper {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .delivery-form-group-date {
@@ -867,7 +868,7 @@ body {
 }
 
 .delivery-form-wrapper {
-  margin-bottom: 27px;
+  margin-bottom: 30px;
 }
 
 
@@ -880,7 +881,7 @@ body {
 }
 
 .delivery-form-button {
-  margin: 0 auto;
+  margin: -2px auto;
   display: block;
 }
 
@@ -903,7 +904,7 @@ body {
   font-weight: 700;
   line-height: 20px;
   color: #2D3440;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   width: fit-content;
 }
 
@@ -974,7 +975,7 @@ body {
 .footer-item-text-icon-heart::before {
   content: '';
   position: absolute;
-  left: -24px;
+  left: -23px;
   top: 2px;
   width: 16px;
   height: 16px;
@@ -1014,7 +1015,7 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   padding-top: 42px;
-  padding-bottom: 57px;
+  padding-bottom: 48px;
 }
 
 .breadcrumbs-list {
@@ -1122,6 +1123,16 @@ body {
   transition: all 100ms ease-out;
 }
 
+.control-input[type="radio"]:focus + .control-mark::before {
+  outline: none;
+  background-color: #FCFCFC;
+}
+
+.control-input[type="radio"]:focus + .control-mark {
+  outline: none;
+  border-color: #FCFCFC;
+}
+
 .catalog-form-item:hover .control-mark {
   border-color: #FCFCFC;
 }
@@ -1163,6 +1174,10 @@ body {
 
 .control-input[type="checkbox"]:checked + .control-mark-ckeckbox::before {
   background-image: url('../images/checkbox-checked.svg');
+}
+
+.control-input[type="checkbox"]:focus + .control-mark-ckeckbox::before {
+  filter: invert(1) contrast(300%);
 }
 
 .catalog-form-item:hover .control-mark-ckeckbox::before {
@@ -1227,6 +1242,8 @@ body {
 
 .range-bar {
   position: absolute;
+  left: 25px;
+  width: 88px;
   height: 2px;
   background-color: #565C66;
 }
@@ -1336,10 +1353,10 @@ body {
 }
 
 .catalog-form-button {
-  margin: 8px 0 0 16px;
+  margin: 8px 0 0 20px;
   border: 2px solid #FCFCFC;
   border-radius: 20px;
-  padding: 8px 53px;
+  padding: 10px 56px;
   font-weight: 700;
   color: #2D3440;
   background-color: rgba(252, 252, 252, 0.3);
@@ -1445,7 +1462,7 @@ body {
 
 .section-title-gifts {
   max-width: 434px;
-  margin: 0 auto 47px auto;
+  margin: 0 auto 55px auto;
   text-align: center;
 }
 
@@ -1454,7 +1471,7 @@ body {
 }
 
 .gifts-title {
-  margin: 0 0 24px 0;
+  margin: 0 0 28px 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -1462,9 +1479,11 @@ body {
 }
 
 .gifts-button {
+  margin: -4px;
   border-radius: 26px;
   padding: 12px 32px;
   border: 4px solid #FB9EB5;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1505,27 +1524,30 @@ body {
 
 .gifts-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
   padding: 0;
   list-style-type: none;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 
 .gifts-item {
-  padding: 36px 36px 32px 36px;
+  padding: 36px;
   max-width: 570px;
   width: 100%;
   background-color: #FF7799;
   margin-right: 30px;
+  margin-bottom: 30px;
   border-radius: 16px;
-}
-
-.gifts-item:last-child {
-  margin: 0;
 }
 
 .gifts-text {
   margin: 0 0 28px 0;
   max-width: 328px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .gifts-item-one {
@@ -1571,7 +1593,7 @@ body {
 
 .products-img {
   display: block;
-  margin: -51px auto 0 auto;
+  margin: -51px auto 2px auto;
   border-radius: 50%;
   width: 182px;
   height: 182px;
@@ -1595,7 +1617,6 @@ body {
 
 .section-title-info {
   max-width: 995px;
-  /* margin: 0 auto; */
   text-align: center;
 }
 
@@ -1680,7 +1701,7 @@ body {
   background-image: url(../images/delivery-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 67px 64px 64px 100px;
+  padding: 64px 64px 64px 100px;
   border-radius: 16px;
 }
 
@@ -1691,10 +1712,10 @@ body {
 }
 
 .delivery-text {
-  max-width: 371px;
+  max-width: 380px;
   width: 100%;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 }
 
 .delivery-text:last-child {
@@ -1708,6 +1729,7 @@ body {
 }
 
 .delivery-content {
+  padding: 6px 0 0 0;
   max-width: 371px;
 }
 
@@ -1716,7 +1738,7 @@ body {
   background-color: #FCFCFC;
   max-width: 500px;
   width: 100%;
-  padding: 40px 40px 34px 40px;
+  padding: 40px 40px 40px 40px;
   border-radius: 8px;
 }
 
@@ -1795,6 +1817,7 @@ body {
   border-radius: 26px;
   padding: 12px 32px;
   max-width: 187px;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1839,6 +1862,7 @@ body {
 .navigation-item-drop:hover .navigation-link-drop {
   visibility: visible;
   opacity: 1;
+  z-index: 1;
 }
 
 .navigation-item-drop:hover .navigation-link {
@@ -1955,7 +1979,7 @@ body {
   height: 100%;
 }
 
-.header-popap h3 {
+.header-popap .header-popap-title {
   margin: 0 0 32px 0;
   font-weight: 700;
   font-size: 24px;
