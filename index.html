@@ -61,8 +61,8 @@
               <p class="header-popap-title">Личный кабинет</p>
               <form class="header-popap-form" action="https://echo.htmlacademy.ru">
                 <div class="header-popap-form-inner">
-                  <input class="header-popap-input page-input" name="email" type="email" placeholder="email@example.com">
-                  <input class="header-popap-input page-input" name="password" type="password" value="dsadas">
+                  <input class="header-popap-input page-input" name="email" type="email" placeholder="email@example.com" required>
+                  <input class="header-popap-input page-input" name="password" type="password" value="" required>
                 </div>
                 <div class="header-popap-form-bottom">
                   <button type="submit" class="page-button">Войти</button>
@@ -488,13 +488,14 @@
         </button>
         <h3 class="modal-title">Мы обязательно ответим вам!</h3>
         <form class="modal-form" action="https://echo.htmlacademy.ru">
-          <input class="modal-input page-input" name="name" type="text" placeholder="Имя и фамилия">
-          <input class="modal-input page-input" name="email" type="email" placeholder="email@example.com">
+          <input class="modal-input page-input" name="name" type="text" placeholder="Имя и фамилия" required>
+          <input class="modal-input page-input" name="email" type="email" placeholder="email@example.com" required>
           <textarea class="page-textaria" name="comment" placeholder="В свободной форме"></textarea>
+
+          <div class="modal-button-wrapper">
+            <button class="page-button modal-button" type="submit">Отправить</button>
+          </div>
         </form>
-        <div class="modal-button-wrapper">
-          <button class="page-button modal-button" type="button">Отправить</button>
-        </div>
       </div>
     </div>
   </div>

@@ -170,22 +170,22 @@
               <span class="catalog-form-title">Жирность:</span>
               <div class="checkbox-list">
                 <label class="catalog-form-item">
-                  <input type="radio" class="visually-hidden control-input" name="fat">
+                  <input type="radio" value="0%" class="visually-hidden control-input" name="fat">
                   <span class="control-mark"></span>
                   <span>0%</span>
                 </label>
                 <label class="catalog-form-item">
-                  <input type="radio" checked class="visually-hidden control-input" name="fat">
+                  <input type="radio" value="10%" checked class="visually-hidden control-input" name="fat">
                   <span class="control-mark"></span>
                   <span>до 10%</span>
                 </label>
                 <label class="catalog-form-item">
-                  <input type="radio" class="visually-hidden control-input" name="fat">
+                  <input type="radio" value="30%" class="visually-hidden control-input" name="fat">
                   <span class="control-mark"></span>
-                  <span>до 30% </span>
+                  <span>до 30%</span>
                 </label>
                 <label class="catalog-form-item">
-                  <input type="radio" class="visually-hidden control-input" name="fat">
+                  <input type="radio" value="more-30%" class="visually-hidden control-input" name="fat">
                   <span class="control-mark"></span>
                   <span>выше 30%</span>
                 </label>
@@ -198,27 +198,27 @@
               <span class="catalog-form-title">Наполнители:</span>
               <div class="checkbox-list">
                 <label class="catalog-form-item">
-                  <input type="checkbox" checked class="control-input visually-hidden" name="filler">
+                  <input type="checkbox" value="chocolate" checked class="control-input visually-hidden" name="filler">
                   <span class="control-mark-ckeckbox"></span>
                   <span>шоколадные</span>
                 </label>
                 <label class="catalog-form-item">
-                  <input type="checkbox" checked class="control-input visually-hidden" name="filler">
+                  <input type="checkbox" value="sugar-sprinkle" checked class="control-input visually-hidden" name="filler">
                   <span class="control-mark-ckeckbox"></span>
                   <span>сахарные посыпки</span>
                 </label>
                 <label class="catalog-form-item">
-                  <input type="checkbox" class="control-input visually-hidden" name="filler">
+                  <input type="checkbox" value="fruit" class="control-input visually-hidden" name="filler">
                   <span class="control-mark-ckeckbox"></span>
                   <span>фрукты</span>
                 </label>
                 <label class="catalog-form-item">
-                  <input type="checkbox" class="control-input visually-hidden" name="filler">
+                  <input type="checkbox" value="syrup" class="control-input visually-hidden" name="filler">
                   <span class="control-mark-ckeckbox"></span>
                   <span>сиропы</span>
                 </label>
                 <label class="catalog-form-item">
-                  <input type="checkbox" class="control-input visually-hidden" name="filler">
+                  <input type="checkbox" value="jam" class="control-input visually-hidden" name="filler">
                   <span class="control-mark-ckeckbox"></span>
                   <span>джемы</span>
                 </label>
@@ -476,13 +476,14 @@
         </button>
         <h3 class="modal-title">Мы обязательно ответим вам!</h3>
         <form class="modal-form" action="https://echo.htmlacademy.ru">
-          <input class="modal-input page-input" name="name" type="text" placeholder="Имя и фамилия">
-          <input class="modal-input page-input" name="email" type="email" placeholder="email@example.com">
+          <input class="modal-input page-input" name="name" type="text" placeholder="Имя и фамилия" required>
+          <input class="modal-input page-input" name="email" type="email" placeholder="email@example.com" required>
           <textarea class="page-textaria" name="comment" placeholder="В свободной форме"></textarea>
+
+          <div class="modal-button-wrapper">
+            <button class="page-button modal-button" type="submit">Отправить</button>
+          </div>
         </form>
-        <div class="modal-button-wrapper">
-          <button class="page-button modal-button" type="button">Отправить</button>
-        </div>
       </div>
     </div>
   </div>
